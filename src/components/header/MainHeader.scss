@@ -1,0 +1,75 @@
+.main-header{
+    padding: 0px 12px;
+    display:flex;
+    align-items:center;
+    justify-content: space-between;
+    box-shadow: 2px 0px 3px rgba(0,0,0,0.3);
+    height:52px;
+    &__left{
+        display:flex;
+    }
+    &__right{
+        display:flex;
+    }
+
+    &__humberger-icon{
+
+    }
+    &__humberger-btn{
+        border: none;
+        outline: none;
+        background-color: transparent;
+        i{
+            font-size: 24px;
+        }
+        cursor: pointer;
+    }
+    &__theme-mode{
+        display:flex;
+    }
+    &__theme-mode-switch{
+        display:flex;
+        align-items:center;
+        label{
+            font-size: 13px;
+            margin-left: 6px;
+        }
+    }
+
+    &__nontifycation{
+        display:flex;
+        align-items:center;
+        margin: 0px 18px;
+    }
+    &__nontifycation-btn{
+        background-color:transparent;
+        border: none;
+        outline: none;
+        i{
+            font-size: 24px;
+            color: #425A70;
+        }
+        cursor: pointer;
+    }
+    &__user-info{
+        display:flex;
+        align-items:center;
+        position: relative;
+    }
+    &__user-name{
+        margin-left: 8px;
+    }
+    &__user-more-icon{
+        background-color: transparent;
+        border: none;
+        outline: none;
+        margin-left:8px;
+        cursor: pointer;
+        i{
+            font-size: 16px;
+        }
+    }
+    &__user-options{
+        position: absolute;
+    }
+}

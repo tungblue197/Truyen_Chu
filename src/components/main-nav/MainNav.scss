@@ -1,0 +1,40 @@
+.main-nav {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  &__item {
+    display: block;
+  }
+  &__link {
+    display: block;
+    text-decoration: none;
+    color: #222;
+    height: 36px;
+    line-height: 36px;
+    padding: 0px 8px;
+    border: 1px solid #eee;
+  }
+  &__item-icon {
+    width: 10px;
+    margin-right: 8px;
+  }
+  &__empty{
+    width: 100%;
+    text-align: center;
+    padding: 20px 0px;
+    span{
+        vertical-align: middle;
+        text-decoration: underline;
+        font-weight: 300;
+    }
+  }
+}
+.main-nav--dark{
+
+}
+.main-nav--light{
+
+}
+.main-nav--default{
+
+}
