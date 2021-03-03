@@ -16,7 +16,6 @@ const getMenuRequest = () => {
 };
 
 const getMenuSuccess = (payload) => {
-    console.log('payload : ', payload);
     return {
         type: types.GET_ALL_MENU_SUCCESS,
         payload: payload.data

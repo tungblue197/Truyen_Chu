@@ -1,16 +1,28 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useMemo } from "react";
 import PropTypes from "prop-types";
 import { NavLink } from "react-router-dom";
-import arrowIcon from '../../assets/icons/play.svg';
+import EmptyBox from '../empty-box/EmptyBox';
+import { DashboardIcon,SettingsIcon ,UserIcon,BookIcon , FollowingIcon, LayersIcon, TagIcon, HandIcon, ErrorIcon, HelperManagementIcon } from 'evergreen-ui';
 import './MainNav.scss';
 
 
 function MainNav({ items, theme }) {
-
+  let menuIcons = useMemo(() => ([
+    <DashboardIcon size={20} />,
+    <SettingsIcon  size={20}/>,
+    <UserIcon size={20}/>,
+    <BookIcon size={20}/>,
+    <FollowingIcon size={20}/>,
+    <LayersIcon size={20}/>,
+    <TagIcon size={20}/>,
+    <HandIcon size={20}/>,
+    <ErrorIcon size={20}/>,
+    <HelperManagementIcon size={20} />
+  ]), [])
   const renderMenuItem = () => {
     if(!items?.length) return (
       <div className="main-nav__empty">
-        <span>Không có dữ liệu</span>
+        <EmptyBox title="Không có dữ liệu!"  />
       </div>
     )
     return (
@@ -22,7 +34,7 @@ function MainNav({ items, theme }) {
               activeClassName="main-nav__link--active"
               to={item.link}
             >
-              <img className="main-nav__item-icon" src={item.icon || arrowIcon} /> {item.title}
+              { menuIcons[index]}  {item.title}
             </NavLink>
           </li>
         );

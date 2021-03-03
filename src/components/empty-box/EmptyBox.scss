@@ -1,0 +1,10 @@
+.empty-box{
+    width: 100%;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:center;
+    .empty-box__title{
+        margin-bottom: 12px;
+    }
+}

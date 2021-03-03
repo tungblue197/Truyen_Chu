@@ -12,8 +12,11 @@ import {
   LogOutIcon,
   Pill,
   Text,
-  Pane
+  Pane,
+  BoxIcon
 } from "evergreen-ui";
+
+import EmptyBox from '../empty-box/EmptyBox';
 import "./MainHeader.scss";
 
 function MainHeader(props) {
@@ -62,7 +65,7 @@ function MainHeader(props) {
                 height={240}
                 display="flex"
               >
-                <Text>TOP_LEFT</Text>
+                <EmptyBox title="Không có thông báo nào!" icon={<BoxIcon color="#425A70" size={50} />} />
               </Pane>
             }
             position={Position.TOP_RIGHT}
@@ -90,7 +93,7 @@ function MainHeader(props) {
         </div>
         <div className="main-header__user-info">
           <div className="main-header__user-avatar">
-            <Avatar name="Pham Van Tung" size={36} />
+            <Avatar name="Pham Van Tung" size={32} />
           </div>
           <div className="main-header__user-name">
             <span>Phạm Văn Tùng</span>
@@ -113,7 +116,7 @@ function MainHeader(props) {
             }
           >
             <button className="main-header__user-more-icon">
-              <i className="fas fa-ellipsis-v"></i>
+              <i className="fas fa-ellipsis-v" style={{ color: '#425A70'}}></i>
             </button>
           </Popover>
           {/* end menu */}

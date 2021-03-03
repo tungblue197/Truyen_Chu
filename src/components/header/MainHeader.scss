@@ -5,6 +5,7 @@
     justify-content: space-between;
     box-shadow: 2px 0px 3px rgba(0,0,0,0.3);
     height:52px;
+    color: #425A70;
     &__left{
         display:flex;
     }
@@ -58,6 +59,7 @@
     }
     &__user-name{
         margin-left: 8px;
+        font-size: 15px;
     }
     &__user-more-icon{
         background-color: transparent;
@@ -72,4 +74,7 @@
     &__user-options{
         position: absolute;
     }
+}
+.main-header--dark{
+    color: '#425A70';
 }

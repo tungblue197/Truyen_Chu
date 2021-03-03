@@ -1,10 +1,11 @@
 import React from 'react'
+import UserManagermentContainer from '../containers/UserManagermentContainer'
 
 function UserManagermentPage(props) {
     return (
-        <div className="user-managerment">
-            
-        </div>
+        <>
+            <UserManagermentContainer />
+        </>
     )
 }
 

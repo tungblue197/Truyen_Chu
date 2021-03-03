@@ -1,0 +1,11 @@
+.page-header{
+    padding:8px 12px;
+    box-sizing: border-box;
+    width: 100%;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    .page-header__right{
+        display:flex;
+    }
+}

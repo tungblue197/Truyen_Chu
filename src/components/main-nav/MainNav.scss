@@ -6,13 +6,19 @@
     display: block;
   }
   &__link {
-    display: block;
+    display: flex;
+    align-items:center;
     text-decoration: none;
-    color: #222;
-    height: 36px;
-    line-height: 36px;
+    color: #fff;
+    height: 40px;
+    line-height: 40px;
     padding: 0px 8px;
-    border: 1px solid #eee;
+    border: 1px solid rgba(92, 92, 92, 0.137);
+    text-shadow: 1px 1px 3px rgba(138, 138, 138, 0.425);
+    svg{
+      margin-right: 12px;
+      color: #fff;
+    }
   }
   &__item-icon {
     width: 10px;
@@ -24,7 +30,6 @@
     padding: 20px 0px;
     span{
         vertical-align: middle;
-        text-decoration: underline;
         font-weight: 300;
     }
   }
